@@ -23,16 +23,21 @@ const PORT=process.env.PORT||5000;
 
 require('./Models/order')
 require('./Models/user')
-require('./Routes/orders')(app)
-require('./Routes/users')(app)
+require('./Routes/routes')(app)
+// require('./Routes/users')(app)
 
-if(process.env.NODE_ENV==="production")
-{
-    app.use(express.static('client/build'))
-    app.get("*",(req,res)=>{
-        res.sendFile(path.join(__dirname,"client","build","index.html"))
-    })
-}
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+    app.get("/*", function(req, res) {
+      res.sendFile(path.join(__dirname, "./client/build/index.html"));
+    });
+  }
+  else {
+    app.use(express.static(path.join(__dirname, '/client/public')));
+    app.get("/*", function(req, res) {
+      res.sendFile(path.join(__dirname, "./client/public/index.html"));
+    });
+  }
 
 app.listen(PORT,()=>{
     console.log("listening on 5000 port")
