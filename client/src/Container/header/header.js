@@ -7,8 +7,10 @@ import * as actionType from "../../Store/Action/actions";
 import { requestData } from "../../Manger/manger";
 import { LOGIN_WITH_TOKEN, LOGOUT } from "../../Url/url";
 class header extends Component {
+  
   state = { activeItem: "home", isLoaded: false };
   componentDidMount = () => {
+    this.setState({ isLoaded: false });
     var user = JSON.parse(window.localStorage.getItem("pizzaBar"));
     if (user) {
       let newData = {

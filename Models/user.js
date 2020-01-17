@@ -21,7 +21,7 @@ const user=new Schema({
 
 user.methods.generateToken=function(){
     const user=this
-    const token=jwt.sign({_id:user._id.toHexString()},'im awasome and you know it',{expiresIn:"3 weeks"})
+    const token=jwt.sign({_id:user._id.toHexString()},key.SECRET,{expiresIn:"3 weeks"})
     user.tokens.push({token})
     return user.save().then(user=>{
         return Promise.resolve(token)
