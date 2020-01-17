@@ -18,7 +18,7 @@ class dashboard extends Component {
       <div className="dashboard">
         <div className="intro-wrapper">
           <div className="text">
-            <h2 className="welcome">Welcome1</h2>
+            <h2 className="welcome">Welcome</h2>
 
             <h1 className="intro">
               We got some delishes <br /> pizzas for you
