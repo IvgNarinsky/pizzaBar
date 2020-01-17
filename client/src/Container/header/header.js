@@ -8,7 +8,7 @@ import { requestData } from "../../Manger/manger";
 import { LOGIN_WITH_TOKEN, LOGOUT } from "../../Url/url";
 class header extends Component {
   
-  state = { activeItem: "home", isLoaded: false };
+  state = { activeItem: "home", isLoaded: true };
   componentDidMount = () => {
     var user = JSON.parse(window.localStorage.getItem("pizzaBar"));
     if (user) {
@@ -205,7 +205,7 @@ class header extends Component {
           </Link>
           {this.state.isLoaded ? (
             <Menu.Menu position="right">
-              {!this.props.auth.login ? (
+              {!this.props.auth.login ? 
                 <Link
                   to="/login"
                   id="login"
@@ -215,7 +215,7 @@ class header extends Component {
                 >
                   login
                 </Link>
-              ) : (
+               : 
                 <Link
                   to="/"
                   id="logout"
@@ -225,7 +225,7 @@ class header extends Component {
                 >
                   logout
                 </Link>
-              )}
+              }
             </Menu.Menu>
           ) : null}
         </Menu>
