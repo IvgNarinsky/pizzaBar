@@ -8,7 +8,7 @@ const path=require("path")
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 mongoose.Promise=global.Promise
-mongoose.connect(keys.MONGO_DB,{useNewUrlParser:true,useCreateIndex:true,useUnifiedTopology: true,useFindAndModify:false},(err,db)=>{
+mongoose.connect("mongodb+srv://ivgeni:burger1234@cluster0-djgnk.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true,useCreateIndex:true,useUnifiedTopology: true,useFindAndModify:false},(err,db)=>{
     if(err)
     {
         console.log("connection db failed",err)
