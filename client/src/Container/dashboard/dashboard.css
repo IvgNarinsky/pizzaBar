@@ -1,0 +1,318 @@
+.dashboard {
+    background-image: url("https://image.freepik.com/free-photo/old-wooden-texture-background-vintage_55716-1138.jpg");
+    background-size: cover;
+    height: 780px;
+    margin-top: -15px;
+    opacity: .8;
+
+
+}
+
+.welcome {
+    color: white;
+    font-size: 50px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+
+
+}
+
+.text {
+    animation-name: fromLeft;
+    animation-duration: 3s;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    height: 500px;
+    width: 500px;
+}
+
+.intro {
+    color: black;
+    font-family: 'Fascinate Inline', cursive;
+
+    font-size: 50px;
+}
+
+.introPizza {
+    animation-name: fromTop;
+    animation-duration: 3s;
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    left: 45%;
+
+
+}
+
+.introPizza1 {
+    animation-name: fromLeft1;
+    animation-duration: 4s;
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    left: 13%;
+    width: 100px;
+    height: 100px;
+
+}
+
+.intro-wrapper {
+    position: absolute;
+    left: 0%;
+    top: 8%;
+    /* background-color: rgb(0, 0, 0, 0.6); */
+    height: 780px;
+    width: 100%;
+    z-index: -2;
+}
+
+
+.button1 {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.button1:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.subintro {
+    color: #adff29;
+    font-family: 'EB Garamond', serif;
+
+}
+
+
+
+
+
+  @media screen and (max-width: 1200px) {
+    .dashboard {
+        background-image: url("https://image.freepik.com/free-photo/old-wooden-texture-background-vintage_55716-1138.jpg");
+        background-size: cover;
+        min-height: 1000px;
+        margin-top: -15px;
+        opacity: .8;
+    
+    
+    }
+    
+    .welcome {
+        color: white;
+        font-size: 50px;
+        font-family: 'Liu Jian Mao Cao', cursive;
+    
+    
+    }
+    
+    .text {
+        animation-name: fromLeftM;
+        animation-duration: 3s;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        height: 500px;
+        width: 500px;
+    }
+    
+    .intro {
+        color: black;
+        font-family: 'Fascinate Inline', cursive;
+    
+        font-size: 50px;
+    }
+    
+    .introPizza {
+        animation-name: fromTopM;
+        animation-duration: 3s;
+        position: absolute;
+        z-index: -1;
+        top: 25%;
+        left: 45%;
+        height: 400px;
+    
+    
+    }
+    
+    .introPizza1 {
+        animation-name: fromLeftM1;
+        animation-duration: 2s;
+        position: absolute;
+        z-index: -1;
+        top: 18%;
+        left: 38%;
+        width: 100px;
+        height: 100px;
+    
+    }
+    
+    .intro-wrapper {
+        position: absolute;
+        left: 0%;
+        top: 7%;
+        background-color: rgb(0, 0, 0, 0.6);
+        min-height: 1000px;
+        width: 100%;
+        z-index: -2;
+    }
+    
+    
+   
+    
+   
+    
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .dashboard {
+        background-image: url("https://image.freepik.com/free-photo/old-wooden-texture-background-vintage_55716-1138.jpg");
+        background-size: cover;
+        min-height: 600px;
+        height: auto;
+        margin-top: -15px;
+        opacity: .8;
+    
+    
+    }
+    .introPizza {
+      display: none;
+    
+    
+    }
+    .welcome {
+        color: white;
+        font-size: 50px;
+        font-family: 'Liu Jian Mao Cao', cursive;
+    
+    
+    }
+    
+    .text {
+        animation-name: none;
+        animation-duration: 3s;
+        position: absolute;
+        top: 8%;
+        left: 15%;
+        height: 300px;
+        width: 300px;
+    }
+    
+    .intro {
+        color: black;
+        font-family: 'Fascinate Inline', cursive;
+        margin-top:30px;
+        font-size: 30px;
+    }
+    .intro-wrapper {
+        min-height: 600px;
+        height: auto;
+        width: 100%;
+        z-index: -2;
+        margin-top:20px;
+    }
+    .button1 {
+        display: block;
+        margin-top: 5px;
+        width:250px;
+     
+    }
+    .introPizza1 {
+        animation-name: none;
+        position: absolute;
+        z-index: -1;
+        top: 6%;
+        left: 58%;
+        width: 80px;
+        height: 80px;
+    
+    }
+  
+    
+  }
+
+
+  
+@keyframes fromLeft {
+    0% {
+        left: 0%;
+        top: 20%;
+    }
+
+    100% {
+        left: 20%;
+        top: 20%;
+    }
+}
+
+@keyframes fromTop {
+    0% {
+        left: 45%;
+        top: 100%;
+    }
+
+    100% {
+        left: 45%;
+        top: 20%;
+    }
+}
+
+@keyframes fromLeft1 {
+    0% {
+        left: 0%;
+        top: 20%;
+    }
+
+    100% {
+        left: 13%;
+        top: 20%;
+    }
+}
+
+
+@keyframes fromTopM {
+    0% {
+        left: 45%;
+        top: 100%;
+    }
+
+    100% {
+        left: 45%;
+        top: 25%;
+    }
+}
+
+@keyframes fromLeftM {
+    0% {
+        left: 0%;
+        top: 20%;
+    }
+
+    100% {
+        left: 15%;
+        top: 20%;
+    }
+}
+@keyframes fromLeftM1 {
+    0% {
+        left: 0%;
+        top: 20%;
+    }
+
+    100% {
+        left: 38%;
+        top: 18%;
+    }
+}
+

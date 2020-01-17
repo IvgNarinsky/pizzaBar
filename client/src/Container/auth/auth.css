@@ -1,0 +1,210 @@
+.authWall{
+    background-image: url("https://cdn6.dissolve.com/p/D1061_74_320/D1061_74_320_1200.jpg");
+    /* background-size: cover; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 780px;
+    margin-top:-15px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .auth-box{
+      width: 450px;
+      height: 500px;
+      background-color:#18181E;
+      opacity: 0.9;
+      border-radius: 20px;
+  }
+  .auth-title{
+      color:white;
+      font-family: 'Fascinate Inline', cursive;
+
+  }
+
+  .group 			  { 
+    position:relative; 
+    margin-bottom:45px; 
+  }
+  input 				{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+  }
+  input:focus 		{ outline:none; }
+  
+  /* LABEL ======================================= */
+  label 				 {
+    color:#1AAB8A; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  /* active state */
+  input:focus ~ label, input:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+    color:#fff;
+  }
+  
+  /* BOTTOM BARS ================================= */
+  .bar 	{ position:relative; display:block; width:300px; }
+  .bar:before, .bar:after 	{
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:#5264AE; 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  .bar:before {
+    left:50%;
+  }
+  .bar:after {
+    right:50%; 
+  }
+  
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+  }
+  
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+
+  .buttonEffect{
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:30px;
+    font-size:1.0em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  .buttonEffect:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  .buttonEffect:before,.buttonEffect:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  .buttonEffect:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .buttonEffect:hover:before,.buttonEffect:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  .back-button{
+      margin-right: 10px;
+  }
+  .error-color{
+      color:red;
+  }
+  .register-button{
+      margin-left: 10px;
+  }
+  @media screen and (max-width: 992px) {
+    .authWall{
+      
+        min-height: 1000px;
+        margin-top:-15px;
+    }
+    .auth-box{
+        margin-top:-80px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .auth-box{
+        height: auto;
+        background-color:transparent;
+    }
+    .auth-title{
+        color:greenyellow;
+        font-family: 'Fascinate Inline', cursive;
+  
+    }
+    label 				 {
+        color:#757575; 
+   
+      }
+      .buttonEffect{
+        background:#1AAB8A;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:30px;
+        font-size:1.0em;
+        padding:0 2em;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+      }
+      .buttonEffect:hover{
+        background:#fff;
+        color:#1AAB8A;
+      }
+      .auth-box{
+        margin-top:0px;
+    }
+    
+  }

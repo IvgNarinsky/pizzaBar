@@ -1,0 +1,29 @@
+.locationForm{
+    height: 500px;
+    width: 500px;
+
+     z-index: 1; 
+    background-size: contain;
+    margin-top:250px;
+
+}
+.lImg{
+    height: 500px;
+    width: 500px;
+    opacity: 0.4;
+}
+
+
+.buttonMrg{
+    margin-top:200px;
+    
+}
+.bgInp{
+    background-color: rgb(185, 141, 124);
+
+
+}
+.bgInp::placeholder
+{
+    color:rgb(49, 48, 48)
+} 

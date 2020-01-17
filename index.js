@@ -1,0 +1,31 @@
+const express=require("express")
+const app=express()
+const bodyParser=require("body-parser")
+const mongoose=require('mongoose')
+const keys=require("./config/keys")
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:true}))
+mongoose.Promise=global.Promise
+mongoose.connect(keys.MONGO_DB,{useNewUrlParser:true,useCreateIndex:true,useUnifiedTopology: true,useFindAndModify:false},(err,db)=>{
+    if(err)
+    {
+        console.log("connection db failed",err)
+    }
+    else{
+    console.log("connect to db")
+    } 
+})
+
+const PORT=process.env.PORT||5000;
+
+
+require('./Models/order')
+require('./Models/user')
+require('./Routes/orders')(app)
+require('./Routes/users')(app)
+
+
+app.listen(PORT,()=>{
+    console.log("listening on 5000 port")
+})
