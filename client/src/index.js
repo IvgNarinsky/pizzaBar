@@ -11,6 +11,7 @@ import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 import { Provider } from "react-redux";
 import * as serviceWorker from './serviceWorker';
 import 'semantic-ui-css/semantic.min.css'
+import './index.css'
 
 const rootReducer = combineReducers({
  auth:AuthR,
