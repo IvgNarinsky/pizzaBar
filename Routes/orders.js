@@ -21,7 +21,7 @@ module.exports = app => {
       order: req.body.order,
       location: req.body.location,
       payment: req.body.payment,
-      time: moment().format('LTS'),
+      time: d.getHours() + ":" + d.getMinutes(),
       date: d.getDate() + "/" + (d.getMonth()+1) + "/" + d.getFullYear(),
       totalPrice:Number(totalPrice.toFixed(2))
        

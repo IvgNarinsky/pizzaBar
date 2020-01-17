@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const USER = mongoose.model("USER");
 const auth = require("../MiddleWare/auth");
-var moment = require('moment');
 module.exports = app => {
   //add user
   app.post("/api/users/add-user", (req, res) => {
@@ -12,7 +11,7 @@ module.exports = app => {
       lastName: req.body.lastName,
       email: req.body.email,
       password: req.body.password,
-      time: moment().format('LTS'),
+      time: d.getHours() + ":" + d.getMinutes(),
       date: d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear()
     };
     let user = new USER(newUser);
@@ -22,7 +21,7 @@ module.exports = app => {
         user
           .save()
           .then(user => {
-            return await user.generateToken();
+            return user.generateToken();
           }).then(token=>{
             res.status(200).send({user,token:token});
           })
