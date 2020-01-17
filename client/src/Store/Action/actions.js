@@ -60,13 +60,15 @@ export const saveLocation=(location)=>{
     }
  }
 
- export const login=(email)=>{
-     return{
-         type:actionType.LOGIN,
-         payload:email
 
-     }
- }
+ export const login=(email)=>(dispatch)=> Promise.resolve().then(() => {
+
+    return dispatch({        
+        type:actionType.LOGIN,
+        payload:email
+});
+});
+
  export const logout=()=>{
     return{
         type:actionType.LOGOUT,

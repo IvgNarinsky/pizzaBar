@@ -26,8 +26,9 @@ class header extends Component {
       requestData(data)
         .then(res => {
           if ("JsonWebTokenError" !== res.data.name) {
-            this.props.login(res.data.email);
-            this.setState({ isLoaded: true });
+            this.props.login(res.data.email).then(()=>{
+              this.setState({ isLoaded: true });
+            })
 
           }
 
