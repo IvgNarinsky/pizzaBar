@@ -22,6 +22,7 @@ class Menu extends Component {
 
                  <div className="pizza-description center">
                      <h2 className="piza-title">{pizza.title}</h2>
+                     <br></br>
                      <p className="desc">{pizza.description}</p>
                     <p><span className="price  d-none d-lg-block d-xl-none d-none d-xl-block ">{pizza.price}$ </span> <Link to='/order' className="button2"              onClick={() => {
               this.handleItemClick()}}>

@@ -7,7 +7,9 @@
     margin-top: -15px;
 
 }
-
+h2{
+    font:bold;
+}
 .menu-box {
     position: absolute;
     left: 0%;

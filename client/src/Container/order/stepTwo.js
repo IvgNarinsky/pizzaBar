@@ -162,6 +162,7 @@ class locations extends Component {
           <span id="telError"></span>
           <br></br>
           <div className="centered buttonMrg">
+            <span>
             <button
             className="buttonStep"
               type="button"
@@ -180,6 +181,7 @@ class locations extends Component {
             >
               Next
             </button>
+            </span>
           </div>
         </div>
       </div>

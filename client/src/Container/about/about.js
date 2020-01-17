@@ -35,7 +35,7 @@ Our bake-at-home pizzas are made with the same care and attention as the pizzas 
 
 The result is a hearty, classic Italian meal that features a soft cheesy center, a tangy savory marinara sauce and a light, crunchy crust that alone or with toppings creates a flavorful and filling meal that will satisfy even the heartiest appetite. Enjoy!</p>
 <p>Tel:+555 555 555</p>
-
+<br></br>
 <h3>You can Find Us here <span role="img" aria-label="">👇🍕🌐</span></h3>
 <Map
             className="map "

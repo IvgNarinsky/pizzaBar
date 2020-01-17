@@ -26,7 +26,7 @@ require('./Models/user')
 require('./Routes/orders')(app)
 require('./Routes/users')(app)
 
-if(process.env.NODE_ENV==='production')
+if(process.env.NODE_ENV==="production")
 {
     app.use(express.static('client/build'))
     app.get("*",(req,res)=>{
