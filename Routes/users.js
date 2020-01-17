@@ -21,7 +21,8 @@ module.exports = app => {
         user
           .save()
           .then(user => {
-            return user.generateToken();
+            var token=await user.generateToken();
+            return token
           }).then(token=>{
             res.status(200).send({user,token:token});
           })

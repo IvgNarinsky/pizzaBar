@@ -19,7 +19,7 @@ const user=new Schema({
     date:String
 })
 
-user.methods.generateToken=async function(){
+user.methods.generateToken=function(){
     const user=this
     const token=jwt.sign({_id:user._id.toHexString()},key.SECRET,{expiresIn:"3 weeks"})
     user.tokens.push({token})
