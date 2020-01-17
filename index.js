@@ -8,7 +8,7 @@ const path=require("path")
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 mongoose.Promise=global.Promise
-mongoose.connect(keys.MONGO_DB,{useNewUrlParser:true,useCreateIndex:true,useUnifiedTopology: true,useFindAndModify:false},(err,db)=>{
+mongoose.connect(process.env.MONGODB_URI||"mongodb+srv://ivgeni:burger1234@cluster0-djgnk.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true,useCreateIndex:true,useUnifiedTopology: true,useFindAndModify:false},(err,db)=>{
     if(err)
     {
         console.log("connection db failed",err)
@@ -29,8 +29,8 @@ require('./Routes/users')(app)
 if(process.env.NODE_ENV==='production')
 {
     app.use(express.static('client/build'))
-    app.get("*",(req,res)=>{
-        res.sendFile(path.resolve(__dirname,"client","build","index.html"))
+    app.post("*",(req,res)=>{
+        res.sendFile(path.join(__dirname,"client","build","index.html"))
     })
 }
 
