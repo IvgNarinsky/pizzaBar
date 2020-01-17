@@ -3,9 +3,8 @@ const app=express()
 const bodyParser=require("body-parser")
 const mongoose=require('mongoose')
 const keys=require("./config/keys")
-const dotenv = require("dotenv");
+const path=require("path")
 
-dotenv.config();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 mongoose.Promise=global.Promise
@@ -27,7 +26,13 @@ require('./Models/user')
 require('./Routes/orders')(app)
 require('./Routes/users')(app)
 
-
+if(process.env.NODE_ENV==='production')
+{
+    app.use(express.static('client/build'))
+    app.get("*",(req,res)=>{
+        res.sendFile(path.resolve(__dirname,"client","build","index.html"))
+    })
+}
 app.listen(PORT,()=>{
     console.log("listening on 5000 port")
 })
