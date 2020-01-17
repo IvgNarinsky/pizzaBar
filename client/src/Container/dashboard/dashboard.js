@@ -23,8 +23,10 @@ class dashboard extends Component {
             <h1 className="intro">
               We got some delishes <br /> pizzas for you
             </h1>
+            <br>
+            </br>
             <h3  className="subintro">
-              PizzaRex a small pizza place that delivers
+              PizzaBar a small pizza place that delivers
               <br></br> the tastiest pizzas in the area
             </h3>
             <Link to='/order' className="button1"  onClick={() => {

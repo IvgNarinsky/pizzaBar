@@ -3,6 +3,8 @@ const USER = mongoose.model("USER");
 const auth = require("../MiddleWare/auth");
 module.exports = app => {
   //add user
+ 
+
   app.post("/api/users/add-user", (req, res) => {
     var d = new Date();
 
@@ -51,7 +53,7 @@ module.exports = app => {
       })
   })
 
-  app.post("/api/users/login-with-cred",async(req,res)=>{
+  app.post("https://pizzabar.herokuapp.com/api/users/login-with-cred",async(req,res)=>{
       try{
           let user=await USER.userWithCord(req.body.email,req.body.password)
           const token=await user.generateToken()
