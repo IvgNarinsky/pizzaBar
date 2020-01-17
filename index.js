@@ -3,9 +3,7 @@ const app=express()
 const bodyParser=require("body-parser")
 const mongoose=require('mongoose')
 const keys=require("./config/keys")
-const dotenv = require("dotenv");
 
-dotenv.config();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 mongoose.Promise=global.Promise
