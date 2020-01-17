@@ -29,6 +29,7 @@ class dashboard extends Component {
               PizzaBar a small pizza place that delivers
               <br></br> the tastiest pizzas in the area
             </h3>
+            <br></br>
             <Link to='/order' className="button1"  onClick={() => {
               this.handleItemClick();
             }}>
