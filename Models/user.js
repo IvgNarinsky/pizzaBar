@@ -19,7 +19,7 @@ const user=new Schema({
     date:String
 })
 
-user.methods.generateToken=function(){
+user.methods.generateToken=async function(){
     const user=this
     const token=jwt.sign({_id:user._id.toHexString()},key.SECRET,{expiresIn:"3 weeks"})
     user.tokens.push({token})
@@ -37,7 +37,7 @@ user.methods.toJSON=function(){
     return userObject
 }
 
-user.statics.userWithCord=async function (email,password)
+ user.statics.userWithCord=async function (email,password)
 {
     const user=await this.findOne({email:email})
     if(!user)
