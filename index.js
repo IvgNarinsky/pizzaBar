@@ -4,12 +4,9 @@ const bodyParser=require("body-parser")
 const mongoose=require('mongoose')
 const keys=require("./config/keys")
 const path=require("path")
-const routes=require('./Routes')
 
-
-const PORT=process.env.PORT||5000;
-
-
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:true}))
 mongoose.Promise=global.Promise
 mongoose.connect(process.env.MONGODB_URI||"mongodb+srv://ivgeni:burger1234@cluster0-djgnk.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true,useCreateIndex:true,useUnifiedTopology: true,useFindAndModify:false},(err,db)=>{
     if(err)
@@ -21,15 +18,14 @@ mongoose.connect(process.env.MONGODB_URI||"mongodb+srv://ivgeni:burger1234@clust
     } 
 })
 
+const PORT=process.env.PORT||5000;
 
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended:false}))
 
 require('./Models/order')
 require('./Models/user')
 require('./Routes/orders')(app)
 require('./Routes/users')(app)
-app.use('/',routes)
+
 if(process.env.NODE_ENV==='production')
 {
     app.use(express.static('client/build'))
