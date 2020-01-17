@@ -23,7 +23,7 @@ const PORT=process.env.PORT||5000;
 
 require('./Models/order')
 require('./Models/user')
-require('./Routes/routes')(app)
+require('./Routes/orders')(app)
 // require('./Routes/users')(app)
 
 if (process.env.NODE_ENV === "production") {

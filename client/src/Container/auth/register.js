@@ -48,7 +48,7 @@ class register extends Component {
       };
 
       requestData(data).then(res => {
-      
+         console.log(res)
         if (res.data !== "user already exist") {
           var user = {
             tk: res.data.token,
