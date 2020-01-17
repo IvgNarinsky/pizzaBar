@@ -24,7 +24,7 @@ const PORT=process.env.PORT||5000;
 require('./Models/order')
 require('./Models/user')
 require('./Routes/orders')(app)
-// require('./Routes/users')(app)
+require('./Routes/users')(app)
 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
