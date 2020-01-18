@@ -267,6 +267,7 @@ export class stepOne extends Component {
         <div className="col-lg-2 col-md-3 col-sm-12  orderOptionLoaction">
           <Select
             menuIsOpen
+            isSearchable={false}
             placeholder={this.state.selectedOption}
             className="selectPizza "
             value={selectedOption}
@@ -278,6 +279,7 @@ export class stepOne extends Component {
         <div className="col-lg-2 col-md-3 col-sm-12 sizeLocation orderOptionLoaction">
           <Select
             menuIsOpen
+            isSearchable={false}
             placeholder={this.state.size}
             className="selectPizza "
             value={size}
@@ -288,6 +290,7 @@ export class stepOne extends Component {
         <div className="col-lg-2 col-md-3 col-sm-12 toppingLocation orderOptionLoaction">
           <Select
             menuIsOpen
+            isSearchable={false}
             placeholder={this.state.selectTopping}
             className="selectPizza "
             value={selectTopping}
@@ -326,22 +329,27 @@ export class stepOne extends Component {
               >
                 Next
               </button>
+              <div className=" costTopping"> <p style={{color:"blue"}}>
+                    *Website members enjoying 10% discount*
+                    <br></br>
+                    <span style={{color:"red"}}>*every topping cost 2$*</span></p></div>
+              
             </div>
+            
           ) : null}
-        </div>
-       
+              
     
+        </div>
         {this.state.completedOrders.length > 0 ? (
-          <div className="col-lg-2 col-md-12 col-sm-12" id="completedOrders">
+          <div className="col-lg-2 col-md-6 col-sm-12" id="completedOrders">
             <h2 className="">orders</h2>
             {completed}
           </div>
      
         ) : null}
-                  <div className=" costTopping"> <p style={{color:"blue"}}>
-                    *Website members enjoying 10% discount*
-                    <br></br>
-                    <span style={{color:"red"}}>*every topping cost 2$*</span></p></div>
+
+                
+
       </div>
     );
   }

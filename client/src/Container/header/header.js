@@ -8,7 +8,7 @@ import { requestData } from "../../Manger/manger";
 import { LOGIN_WITH_TOKEN, LOGOUT } from "../../Url/url";
 class header extends Component {
   
-  state = { activeItem: "home", isLoaded: false };
+  state = { activeItem: "home", isLoaded: true };
   componentDidMount = () => {
     var user = JSON.parse(window.localStorage.getItem("pizzaBar"));
     if (user) {
@@ -155,7 +155,7 @@ class header extends Component {
   render() {
     return (
       <Segment inverted>
-        <Menu inverted pointing secondary>
+        <Menu inverted pointing bg-dark>
           <img
             src="https://image.flaticon.com/icons/svg/673/673887.svg"
             className="logo"
