@@ -34,6 +34,7 @@ export default class about extends Component {
 Our bake-at-home pizzas are made with the same care and attention as the pizzas served at our restaurant on PizzaBar’s Tel aviv.  Each pie is handcrafted using the best ingredients: rolled, hand-tossed dough; generous handfuls of fresh mozzarella; and Sicilia’s fresh, specially made tomato sauce.
 
 The result is a hearty, classic Italian meal that features a soft cheesy center, a tangy savory marinara sauce and a light, crunchy crust that alone or with toppings creates a flavorful and filling meal that will satisfy even the heartiest appetite. Enjoy!</p>
+<br></br>
 <p>Tel:+555 555 555</p>
 <br></br>
 <h3>You can Find Us here <span role="img" aria-label="">👇🍕🌐</span></h3>

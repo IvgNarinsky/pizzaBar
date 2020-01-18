@@ -42,6 +42,10 @@ class header extends Component {
 
     }
   };
+
+  componentWillMount=()=>{
+    this.setState({isLoaded:true})
+  }
   handleItemClick = id => {
     if (id === "home") {
       document
