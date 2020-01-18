@@ -25,12 +25,12 @@ class header extends Component {
 
       requestData(data)
         .then(res => {
-          if ("JsonWebTokenError" !== res.data.name) {
+          // if ("JsonWebTokenError" !== res.data.name) {
             this.props.login(res.data.email).then(()=>{
               this.setState({ isLoaded: true });
             })
 
-          }
+          // }
 
         })
         .catch(err => {
@@ -42,10 +42,6 @@ class header extends Component {
 
     }
   };
-
-  componentWillMount=()=>{
-    this.setState({isLoaded:true})
-  }
   handleItemClick = id => {
     if (id === "home") {
       document
