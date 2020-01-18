@@ -244,11 +244,11 @@
   
     
   }
-  @media screen and (min-width: 1800px) {
+  @media screen and (min-width: 1500px) {
     .dashboard {
         background-image: url("https://image.freepik.com/free-photo/old-wooden-texture-background-vintage_55716-1138.jpg");
         background-size: cover;
-        height: 780px;
+        height: 1000px;
         margin-top: -15px;
         opacity: .8;
     

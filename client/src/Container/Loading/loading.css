@@ -187,7 +187,7 @@ body .pizza {
     z-index: 2;
   }
   
-  @media screen and (min-width: 1800px) {
+  @media screen and (min-width: 1500px) {
     .dashboard {
       background-image: url("https://image.freepik.com/free-photo/old-wooden-texture-background-vintage_55716-1138.jpg");
       background-size: cover;

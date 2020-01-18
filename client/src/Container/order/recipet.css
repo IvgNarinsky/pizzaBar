@@ -89,7 +89,7 @@
   #invoice-POS #legalcopy {
     margin-top: 8mm;
   }
-  @media screen and (min-width: 1800px) {
+  @media screen and (min-width: 1500px) {
     #invoice-POS {
       box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
       padding: 12mm;

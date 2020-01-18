@@ -177,6 +177,7 @@
     .auth-box{
         height: auto;
         background-color:transparent;
+        margin-top:100px;
     }
     .auth-title{
         color:greenyellow;
@@ -206,15 +207,12 @@
       .auth-box{
         margin-top:0px;
     }
-    .authWall{
-      margin-top:100px;
-    }
+    
     
   }
-  @media screen and (min-width: 1800px) {
+  @media screen and (min-width: 1500px) {
     .authWall{
       background-image: url("https://cdn6.dissolve.com/p/D1061_74_320/D1061_74_320_1200.jpg");
-      /* background-size: cover; */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
