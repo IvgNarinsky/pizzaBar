@@ -81,8 +81,12 @@
         height: auto;
         min-height: 1200px;
         margin-top: -15px;
-    
-    
+   
+}
+ 
+.ab{
+  margin-right: 0px;
+  margin-left:0px;
 }
 .card {
   

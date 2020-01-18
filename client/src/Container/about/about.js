@@ -22,7 +22,7 @@ export default class about extends Component {
         return (
             <div className="about">
                 <div className="container">
-                    <div className="row">
+                    <div className="row ab">
                         <div className="col-12 about-box">
                 <h1 className="about-title">About us</h1>
                 </div>
