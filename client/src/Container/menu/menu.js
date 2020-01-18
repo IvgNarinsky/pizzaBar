@@ -21,6 +21,7 @@ class Menu extends Component {
 <img  src={pizza.image} className="pizza-menu-images d-none d-sm-block" alt={pizza.title}/>
 
                  <div className="pizza-description center">
+                   <br></br>
                      <h2 className="piza-title">{pizza.title}</h2>
                      <br></br>
                      <p className="desc">{pizza.description}</p>

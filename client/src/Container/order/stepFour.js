@@ -33,7 +33,7 @@ export class stepFour extends Component {
     var tax = totalPrice* this.state.tax;
 	
     return (
-      <div className="row">
+      <div className="row recipet">
         <div id="invoice-POS">
           <center id="top">
             <div className="logo"></div>

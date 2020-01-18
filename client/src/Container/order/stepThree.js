@@ -133,7 +133,7 @@ export class stepThree extends Component {
   }
   render() {
     return (
-      <div className="row">
+      <div className="row payment">
         <div className="locationForm centered">
           <img
             src="https://cdn.dribbble.com/users/2675044/screenshots/6857834/pizza.png"

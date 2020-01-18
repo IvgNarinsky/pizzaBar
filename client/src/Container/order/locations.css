@@ -28,3 +28,15 @@
 {
     color:rgb(49, 48, 48)
 } 
+
+@media screen and (max-width: 600px) {
+    .lImg{
+        height: 500px;
+        width: 400px;
+        opacity: 0.4;
+    }
+    .locationForm{
+        margin-right:0px;
+
+    }
+}

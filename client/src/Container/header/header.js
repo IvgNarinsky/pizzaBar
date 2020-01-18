@@ -8,7 +8,7 @@ import { requestData } from "../../Manger/manger";
 import { LOGIN_WITH_TOKEN, LOGOUT } from "../../Url/url";
 class header extends Component {
   
-  state = { activeItem: "home", isLoaded: true };
+  state = { activeItem: "home", isLoaded: false };
   componentDidMount = () => {
     var user = JSON.parse(window.localStorage.getItem("pizzaBar"));
     if (user) {
