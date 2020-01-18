@@ -206,6 +206,9 @@
       .auth-box{
         margin-top:0px;
     }
+    .authWall{
+      margin-top:100px;
+    }
     
   }
   @media screen and (min-width: 1800px) {
