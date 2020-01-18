@@ -332,7 +332,7 @@ export class stepOne extends Component {
        
     
         {this.state.completedOrders.length > 0 ? (
-          <div className="col-lg-2 col-md-12 col-sm-12 d-none d-sm-block" id="completedOrders">
+          <div className="col-lg-2 col-md-12 col-sm-12" id="completedOrders">
             <h2 className="">orders</h2>
             {completed}
           </div>
