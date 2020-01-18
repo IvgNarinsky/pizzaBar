@@ -177,7 +177,7 @@
     .auth-box{
         height: auto;
         background-color:transparent;
-        margin-top:100px;
+        margin-top:200px !important;
     }
     .auth-title{
         color:greenyellow;
