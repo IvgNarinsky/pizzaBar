@@ -111,5 +111,16 @@
     font-size: 30px;
 }
   }
+  @media screen and (max-width: 1800px) {
+    .about{
+      background-image: url("https://images4.alphacoders.com/988/thumb-1920-988128.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 1000px;
+      margin-top: -15px;
+  
+  
+}
+  }
 
   

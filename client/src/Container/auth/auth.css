@@ -208,3 +208,15 @@
     }
     
   }
+  @media screen and (min-width: 1800px) {
+    .authWall{
+      background-image: url("https://cdn6.dissolve.com/p/D1061_74_320/D1061_74_320_1200.jpg");
+      /* background-size: cover; */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 1000px;
+      margin-top:-15px;
+  }
+
+  }

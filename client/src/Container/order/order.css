@@ -242,3 +242,17 @@
     
     }
 }
+
+@media screen and (max-width: 1800px) {
+    .orders{
+        min-height: 1000px;
+        margin-top: -20px;
+        background-image: url("https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+    
+
+}

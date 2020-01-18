@@ -3,3 +3,11 @@
     width: 350px;
     margin-left: 3px;
 }
+@media screen and (min-width: 1800px) {
+    .lImg, .locationForm {
+        height: 600px;
+        width: 450px;
+        margin-left: 3px;
+    }
+
+}

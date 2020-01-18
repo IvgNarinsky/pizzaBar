@@ -40,3 +40,22 @@
 
     }
 }
+
+@media screen and (min-width: 1800px) {
+
+    .locationForm{
+        height: 600px;
+        width: 600px;
+    
+         z-index: 1; 
+        background-size: contain;
+        margin-top:250px;
+    
+    }
+    .lImg{
+        height: 600px;
+        width: 600px;
+        opacity: 0.4;
+    }
+    
+}
